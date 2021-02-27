@@ -29,3 +29,30 @@ ncol(bank_customers)
 names(bank_customers)
 # AnswerC
 
+
+
+
+curr_date<-Sys.Date()
+curr_time<-Sys.time()
+curr_date
+curr_time
+
+curr_date<-as.POSIXlt(curr_date)
+curr_time<- as.POSIXlt(curr_time)
+names(unclass(curr_time))
+
+
+curr_time$wday
+curr_time$year
+curr_time$sec
+curr_time$hour
+
+
+x<- Sys.time()
+x
+y<- as.POSIXct(x,tz="GMT-5")
+y-x
+#date and time answer
+
+
+numbers<-100:150
